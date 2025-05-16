@@ -1,0 +1,51 @@
+﻿FullName,Abbreviation,Category
+X-ray,,Radiography
+Videofluoroscopy,,Radiography
+Fluoroscopy,,Radiography
+Computed Tomography,CT,CT
+Computed Axial Tomography,CAT,CT
+Computed Tomography Angiography,CTA,CT
+Magnetic Resonance Imaging ,MRI,MRI
+Magnetic Resonance Angiography,MRA,MRI
+Magnetic Resonance Microscopy,MRM,MRI
+Contrast-Enhanced Magnetic Resonance Imaging,Contrast-Enhanced MRI,MRI
+T1-weighted,T1-MRI,MRI
+T2-weighted,T2-MRI,MRI
+Diffusion-weighted Imaging,DWI-MRI,MRI
+Spectroscopy ,MRI-S,MRI
+Ultrasound ,US,Nuclear Imaging
+Positron Emission Tomography,PET,Nuclear Imaging
+Single-Photon Emission Computed Tomography,SPECT ,Nuclear Imaging
+Scintigraphy,,Nuclear Imaging
+Echocardiography,,Cardiovascular Imaging
+Cardiac Computed Tomography,CCT,Cardiovascular Imaging
+Intravascular Ultrasound,IVUS,Cardiovascular Imaging
+Angiography,,Cardiovascular Imaging
+Cardiac Magnetic Resonance Imaging,CMR,Cardiovascular Imaging
+Dermatology,,Visible Light Photography
+Endoscopy,,Visible Light Photography
+Colposcopy,,Visible Light Photography
+Electrocardiogram,ECG,Printed Signal (waves)
+Electroencephalography ,FEG,Printed Signal (waves)
+Electromyography ,EMG,Printed Signal (waves)
+Optical Coherence Tomography,OCT,OCT
+Magnetomotive Optical Coherence Tomography,MM-OCT,OCT
+Quasistatic Elastography/Strain Imaging,,Elastography
+Shear Wave Elasticity Imaging,SWEI,Elastography
+Acoustic Radiation Force Impulse Imaging,ARFI,Elastography
+Supersonic Shear Imaging,SSI,Elastography
+Transient Elastography,,Elastography
+Functional Near-Infrared spectroscopy,FNIR,Infrared Reflectance Imaging
+Near-Infrared Spectroscopy,NIRS,Infrared Reflectance Imaging
+Electrical Impedance Tomography ,EIT,Electrical Impedance Tomography 
+Microscopy,,Microscopy
+Photoacoustic Imaging,,Photoacoustic Imaging
+Quantitative Photoacoustic Tomography,QPAT,Quantitative Photoacoustic Tomography
+Diffuse Optical Tomography,DOT,Diffuse Optical Tomography
+Histopathology,,Histopathology
+Fundus Photography,,Fundus Photography
+Fluorescein Angiography,FA,Ophthalmic Imaging
+Retinal Optical Coherence Tomography,Retinal OCT,Ophthalmic Imaging
+Indocyanine Green Angiography,ICGA,Infrared Reflectance Imaging
+Microperimetry,,Microperimetry
+General Photo of Affected Area,,General Photo of Affected Area
