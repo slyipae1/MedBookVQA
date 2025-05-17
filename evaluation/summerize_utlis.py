@@ -397,25 +397,25 @@ def draw_barchart_level(dict_statistics, level = "L1", colors='#4682B4'):
             "Modality": "ModalityCategory",
             "Department": "DepartmentCategory",
             "Anatomy": "System",
-            "figsize": (10, 6)
+            "figsize": (8, 6)
         },
         "L2": {
             "Modality": "Modality",
             "Department": "Department",
             "Anatomy": "SubSystem",
-            "figsize": (10, 6)
+            "figsize": (8, 6)
         },
         "L3": {
             "Modality": "Modality",
             "Department": "Department",
             "Anatomy": "BodyPart",
-            "figsize": (10, 10)
+            "figsize": (8, 6)
         },
         "L4": {
             "Modality": "Modality",
             "Department": "Department",
             "Anatomy": "Organ",
-            "figsize": (10, 14)
+            "figsize": (8, 6)
         }
     }
 
