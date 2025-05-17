@@ -10,10 +10,12 @@ With a multi-tier annotation system categorizing queries across 42 imaging modal
 
 ## Usage
 ### Data
-+ Create a folder "workspace"
-+ Download the data from [Hugging Face](https://huggingface.co/datasets/slyipae1/MedBookVQA/) to this folder
++ Download the data from [Hugging Face](https://huggingface.co/datasets/slyipae1/MedBookVQA/) to this folder, and unzip figures.zip
+    + evaluation
+    + figures
+    + data.json
 
 ## Evaluation
-+ Change the image path using "evaluation/change_path.py" if needed.
++ Change the image paths using "evaluation/change_path.py" if needed.
 + Run "evaluation/eval.py"
 + Use "evaluation/summerize_result.ipynb" for analysis

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-workspace="" # your created wrokspace to keep the data
+workspace="" # path to this repo
 
 model_path=API/gemini-2.5-pro-preview-03-25
 python eval.py --workspace=$workspace --model_path=$model_path
