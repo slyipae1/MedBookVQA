@@ -1,6 +1,17 @@
 <div align="center">
 
+<div align="center">
+
 # MedBookVQA:  Systematic and Comprehensive Medical Benchmark Derived from Open-Access Book
+
+<div align="center">
+
+</div>
+
+[\[🤗 Dataset\]](https://huggingface.co/datasets/slyipae1/MedBookVQA/) 
+[\[📜 Paper\]](https://arxiv.org/abs/2506.00855)
+
+</div>
 
 <div align="center">
 
@@ -154,6 +165,7 @@ MedBookVQA highlights the value of textbook-based benchmarks for advancing clini
 
 ## Evaluation
 + Change the image paths using "evaluation/change_path.py" if needed.
++ Run "evaluation/eval.py" to evaluate. (Env: Please refer to setup of the corresponding model.)
 + Run "evaluation/eval.py" to evaluate. (Env: Please refer to setup of the corresponding model.)
 + Use "evaluation/summerize_result.ipynb" for analysis
 
