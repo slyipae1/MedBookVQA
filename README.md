@@ -1,4 +1,3 @@
-<div align="center">
 
 <div align="center">
 
@@ -13,14 +12,6 @@
 
 </div>
 
-<div align="center">
-
-</div>
-
-[\[🤗 Dataset\]](https://huggingface.co/datasets/slyipae1/MedBookVQA/) 
-[\[📜 Paper\]](https://arxiv.org/abs/2506.00855)
-
-</div>
 
 ## Introduction
 The rapid rise of general medical AI (GMAI), powered by multimodal large language models (MLLMs), offers promising solutions to healthcare challenges like workforce shortages and rising costs. Systematic benchmarks are essential to evaluate and guide these technologies. Medical textbooks, though rich in structured knowledge, remain underutilized for this purpose.
