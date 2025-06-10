@@ -1,11 +1,22 @@
+<div align="center">
+
 # MedBookVQA:  Systematic and Comprehensive Medical Benchmark Derived from Open-Access Book
 
+<div align="center">
+
+</div>
+
+[\[🤗 Dataset\]](https://huggingface.co/datasets/slyipae1/MedBookVQA/) 
+[\[📜 Paper\]](https://arxiv.org/abs/2506.00855)
+
+</div>
+
 ## Introduction
-The accelerating development of general medical artificial intelligence (GMAI), powered by multimodal large language models (MLLMs), presents transformative potential to tackle persistent healthcare challenges, including workforce shortages and rising costs. To evaluate these advancements effectively, the establishment of systematic benchmarks is essential.
+The rapid rise of general medical AI (GMAI), powered by multimodal large language models (MLLMs), offers promising solutions to healthcare challenges like workforce shortages and rising costs. Systematic benchmarks are essential to evaluate and guide these technologies. Medical textbooks, though rich in structured knowledge, remain underutilized for this purpose.
 
-Introducing **MedBookVQA**, a systematic and comprehensive multimodal benchmark derived from open-access medical textbooks. Our approach involves a standardized pipeline for the automated extraction of medical figures, aligned with relevant narratives. We generate 5,000 clinically relevant questions covering modality recognition, disease classification, anatomical identification, symptom diagnosis, and surgical procedures.
+We introduce **MedBookVQA**, a multimodal benchmark built from open-access medical textbooks. MedBookVQA contains 5,000 clinically meaningful visual-question-answering (VQA) tasks spanning five clinical task types: modality recognition, disease classification, anatomical identification, symptom diagnosis, and surgical procedures. To facilitate detailed performance analysis, the benchmark is organized by a hierarchical annotation system covering 42 imaging modalities, 125 anatomical structures, and 31 clinical specialties. 
 
-With a multi-tier annotation system categorizing queries across 42 imaging modalities, 125 anatomical structures, and 31 clinical specialties, MedBookVQA enables nuanced performance analysis in various medical subdomains. Our evaluation of diverse MLLMs uncovers significant performance disparities, emphasizing critical gaps in current GMAI systems and establishing textbook-derived benchmarks as vital tools for advancing clinical AI.
+MedBookVQA highlights the value of textbook-based benchmarks for advancing clinical AI and provides structured insights into current model limitations across medical domains.
 
 + MedBookVQA Benchmark Results
 ![MedBookVQA Benchmark Results](assets/AllResult.png)
@@ -98,8 +109,64 @@ With a multi-tier annotation system categorizing queries across 42 imaging modal
 
     </details>
 
+    <details>
+    <summary>Sample entry of data.json</summary>
+
+    ```
+    {
+    "_id": "c115303a242b0d28140ad4f50903c63d",
+    "QAtype": "Anatomy Identification",
+    "Question": " What anatomical structure is prominently visible in the center of the mammogram? ",
+    "Answer": " Lactiferous sinus zone",
+    "Distractors": [
+      "Mammary ductal system",
+      "Fibroglandular tissue area",
+      "Areolar complex region"
+    ],
+    "correct_choice": "C",
+    "other_choices": [
+      "A",
+      "B",
+      "D"
+    ],
+    "image_path": "./figures/c115303a242b0d28140ad4f50903c63d.jpg",
+    "LABEL": {
+      "Modality": [
+        "Electrical Impedance Tomography",
+        "Electrical Impedance Tomography"
+      ],
+      "Anatomy": [
+        "Integumentary",
+        "Integumentary",
+        "Mammary gland",
+        "Mammary gland"
+      ],
+      "Department": [
+        "Obstetrics and Gynecology",
+        "Obstetrics and Gynecology"
+      ]
+    }
+    }
+    ```
+
+    </details>
+
 
 ## Evaluation
 + Change the image paths using "evaluation/change_path.py" if needed.
-+ Run "evaluation/eval.py"
++ Run "evaluation/eval.py" to evaluate. (Env: Please refer to setup of the corresponding model.)
 + Use "evaluation/summerize_result.ipynb" for analysis
+
+
+## Citation
+```
+@misc{yip2025medbookvqasystematiccomprehensivemedical,
+      title={MedBookVQA: A Systematic and Comprehensive Medical Benchmark Derived from Open-Access Book}, 
+      author={Sau Lai Yip and Sunan He and Yuxiang Nie and Shu Pui Chan and Yilin Ye and Sum Ying Lam and Hao Chen},
+      year={2025},
+      eprint={2506.00855},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2506.00855}, 
+}
+```
