@@ -1,4 +1,15 @@
+<div align="center">
+
 # MedBookVQA:  Systematic and Comprehensive Medical Benchmark Derived from Open-Access Book
+
+<div align="center">
+
+</div>
+
+[\[🤗 Dataset\]](https://huggingface.co/datasets/slyipae1/MedBookVQA/) 
+[\[📜 Paper\]](https://arxiv.org/abs/2506.00855)
+
+</div>
 
 ## Introduction
 The accelerating development of general medical artificial intelligence (GMAI), powered by multimodal large language models (MLLMs), presents transformative potential to tackle persistent healthcare challenges, including workforce shortages and rising costs. To evaluate these advancements effectively, the establishment of systematic benchmarks is essential.
@@ -98,8 +109,50 @@ With a multi-tier annotation system categorizing queries across 42 imaging modal
 
     </details>
 
+    <details>
+    <summary>Sample entry of data.json</summary>
+
+    ```
+    {
+    "_id": "c115303a242b0d28140ad4f50903c63d",
+    "QAtype": "Anatomy Identification",
+    "Question": " What anatomical structure is prominently visible in the center of the mammogram? ",
+    "Answer": " Lactiferous sinus zone",
+    "Distractors": [
+      "Mammary ductal system",
+      "Fibroglandular tissue area",
+      "Areolar complex region"
+    ],
+    "correct_choice": "C",
+    "other_choices": [
+      "A",
+      "B",
+      "D"
+    ],
+    "image_path": "/data/shebd/fyp2024slyipae/DOAB/MCworkspace_max/figures/c115303a242b0d28140ad4f50903c63d.jpg",
+    "LABEL": {
+      "Modality": [
+        "Electrical Impedance Tomography",
+        "Electrical Impedance Tomography"
+      ],
+      "Anatomy": [
+        "Integumentary",
+        "Integumentary",
+        "Mammary gland",
+        "Mammary gland"
+      ],
+      "Department": [
+        "Obstetrics and Gynecology",
+        "Obstetrics and Gynecology"
+      ]
+    }
+    }
+    ```
+
+    </details>
+
 
 ## Evaluation
 + Change the image paths using "evaluation/change_path.py" if needed.
-+ Run "evaluation/eval.py"
++ Run "evaluation/eval.py" to evaluate. (Env: Please refer to setup of the corresponding model.)
 + Use "evaluation/summerize_result.ipynb" for analysis
